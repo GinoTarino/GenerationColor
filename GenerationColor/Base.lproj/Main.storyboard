@@ -1,24 +1,254 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GenerationColor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTQ-ZY-ZCR">
+                                <rect key="frame" x="20" y="64" width="374" height="365"/>
+                                <color key="backgroundColor" red="0.61176470588235299" green="0.50196078431372548" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TCW-aV-4SL">
+                                <rect key="frame" x="152" y="469" width="45" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="2xS-Bn-bzT"/>
+                                    <constraint firstAttribute="width" constant="45" id="w9k-1x-Bga"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="156">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="18" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="156" minValue="1" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="exc-na-ipp">
+                                <rect key="frame" x="77.5" y="518" width="259" height="31"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="255" id="FT4-HA-Y0Z"/>
+                                    <constraint firstAttribute="height" constant="30" id="IMO-Eo-xnS"/>
+                                </constraints>
+                                <color key="thumbTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gt-VG-wC6">
+                                <rect key="frame" x="79.5" y="555.5" width="64" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nyQ-e1-sBf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="org-0K-r0q"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Green:">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="opaqueSeparatorColor"/>
+                                            <font key="NSFont" size="21" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bPT-m7-YxG">
+                                <rect key="frame" x="152.5" y="553" width="45" height="35"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="8GL-K4-Vdb"/>
+                                    <constraint firstAttribute="height" constant="35" id="k3v-kU-7CR"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="128">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="18" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="128" minValue="1" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="sXG-Dv-8Hc">
+                                <rect key="frame" x="77.5" y="598" width="259" height="31"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="iJF-U8-yA7"/>
+                                    <constraint firstAttribute="width" constant="255" id="qho-ZT-O4j"/>
+                                </constraints>
+                                <color key="thumbTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nr-0P-BGU">
+                                <rect key="frame" x="79.5" y="640" width="48" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="Ron-ZS-eBv"/>
+                                    <constraint firstAttribute="height" constant="30" id="nPm-2B-7K2"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Blue:">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="opaqueSeparatorColor"/>
+                                            <font key="NSFont" size="21" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g8G-Ob-6WH">
+                                <rect key="frame" x="151.5" y="638" width="45" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="4Lz-s5-cz1"/>
+                                    <constraint firstAttribute="width" constant="45" id="HEv-m9-jHT"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="64">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="18" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="56" minValue="1" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="5Qm-aa-oLX">
+                                <rect key="frame" x="77.5" y="682" width="259" height="31"/>
+                                <color key="tintColor" red="0.2410584086" green="0.61355362440000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="255" id="eaR-ga-1mM"/>
+                                    <constraint firstAttribute="height" constant="30" id="iHI-fm-upr"/>
+                                </constraints>
+                                <color key="thumbTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BYF-SS-N5y">
+                                <rect key="frame" x="144.5" y="772" width="125" height="30"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=" Copy color">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="STHeitiSC-Light"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <imageReference key="image" image="square.and.arrow.down.on.square" catalog="system" symbolScale="large" renderingMode="template"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ns-qy-Edr">
+                                <rect key="frame" x="79.5" y="471" width="43" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="43" id="Zud-ph-mgZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="qMW-sd-nlL"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Red:">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="opaqueSeparatorColor"/>
+                                            <font key="NSFont" size="21" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UuO-Sc-5yr">
+                                <rect key="frame" x="107" y="728" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="ExJ-eb-RMl"/>
+                                    <constraint firstAttribute="height" constant="30" id="FQU-Ns-Du4"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="RGB: (156, 128, 64)">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="opaqueSeparatorColor"/>
+                                            <font key="NSFont" size="21" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                        <color key="tintColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstItem="g8G-Ob-6WH" firstAttribute="leading" secondItem="0nr-0P-BGU" secondAttribute="trailing" constant="24" id="0bR-c0-DHl"/>
+                            <constraint firstItem="0nr-0P-BGU" firstAttribute="leading" secondItem="5Qm-aa-oLX" secondAttribute="leading" id="0u0-tX-wkz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BYF-SS-N5y" secondAttribute="bottom" constant="60" id="2GH-Jc-FZI"/>
+                            <constraint firstItem="sXG-Dv-8Hc" firstAttribute="top" secondItem="bPT-m7-YxG" secondAttribute="bottom" constant="10" id="2mV-G4-jIf"/>
+                            <constraint firstItem="3ns-qy-Edr" firstAttribute="centerY" secondItem="TCW-aV-4SL" secondAttribute="centerY" id="A8V-bK-59M"/>
+                            <constraint firstItem="TCW-aV-4SL" firstAttribute="top" secondItem="rTQ-ZY-ZCR" secondAttribute="bottom" constant="40" id="AN8-qD-6A5"/>
+                            <constraint firstItem="BYF-SS-N5y" firstAttribute="top" secondItem="5Qm-aa-oLX" secondAttribute="bottom" constant="60" id="J2X-75-bvC"/>
+                            <constraint firstItem="rTQ-ZY-ZCR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="J4U-Jo-d9B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5Qm-aa-oLX" secondAttribute="bottom" constant="150" id="QrD-Bg-jbL"/>
+                            <constraint firstItem="exc-na-ipp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Rpx-Wy-JVO"/>
+                            <constraint firstItem="BYF-SS-N5y" firstAttribute="top" secondItem="UuO-Sc-5yr" secondAttribute="bottom" constant="14" id="VdO-Bm-tQC"/>
+                            <constraint firstItem="5Qm-aa-oLX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="YMJ-iO-o4q"/>
+                            <constraint firstItem="g8G-Ob-6WH" firstAttribute="top" secondItem="sXG-Dv-8Hc" secondAttribute="bottom" constant="10" id="aaT-sn-Bcc"/>
+                            <constraint firstItem="TCW-aV-4SL" firstAttribute="leading" secondItem="3ns-qy-Edr" secondAttribute="trailing" constant="29.5" id="bN0-zS-P3v"/>
+                            <constraint firstItem="sXG-Dv-8Hc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="erJ-UB-gab"/>
+                            <constraint firstItem="g8G-Ob-6WH" firstAttribute="centerY" secondItem="0nr-0P-BGU" secondAttribute="centerY" id="fOJ-d3-LkK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rTQ-ZY-ZCR" secondAttribute="trailing" constant="20" id="iFS-T8-kPz"/>
+                            <constraint firstItem="bPT-m7-YxG" firstAttribute="top" secondItem="exc-na-ipp" secondAttribute="bottom" constant="5" id="jqn-lH-Fiv"/>
+                            <constraint firstItem="5Qm-aa-oLX" firstAttribute="top" secondItem="g8G-Ob-6WH" secondAttribute="bottom" constant="10" id="lOe-eJ-WZS"/>
+                            <constraint firstItem="bPT-m7-YxG" firstAttribute="centerY" secondItem="6gt-VG-wC6" secondAttribute="centerY" id="nRn-63-0w2"/>
+                            <constraint firstItem="exc-na-ipp" firstAttribute="top" secondItem="TCW-aV-4SL" secondAttribute="bottom" constant="15" id="orn-XK-QcW"/>
+                            <constraint firstItem="6gt-VG-wC6" firstAttribute="leading" secondItem="sXG-Dv-8Hc" secondAttribute="leading" id="sPM-t8-NXu"/>
+                            <constraint firstItem="bPT-m7-YxG" firstAttribute="leading" secondItem="6gt-VG-wC6" secondAttribute="trailing" constant="9" id="sYo-mI-Phy"/>
+                            <constraint firstItem="3ns-qy-Edr" firstAttribute="leading" secondItem="exc-na-ipp" secondAttribute="leading" id="smQ-Fh-8He"/>
+                            <constraint firstItem="rTQ-ZY-ZCR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uLn-5l-yv8"/>
+                            <constraint firstItem="UuO-Sc-5yr" firstAttribute="top" secondItem="5Qm-aa-oLX" secondAttribute="bottom" constant="16" id="ud2-0Q-elS"/>
+                            <constraint firstItem="UuO-Sc-5yr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yYu-aQ-lvx"/>
+                            <constraint firstItem="BYF-SS-N5y" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zJu-JD-orf"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="71.651785714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="square.and.arrow.down.on.square" catalog="system" width="122" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="0.26434022410667285" green="0.80286175012588501" blue="0.41492266334531747" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
